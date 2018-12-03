@@ -20,10 +20,10 @@ pil <-import('PIL')
 # Define server logic required to draw a histogram
 #setwd("/srv/shiny-server/AmISam")
 function(input, output, session) {
-  
+  show(id = "loading-content")  
   myCamera <- callModule(shinyviewr,"myCamera", outputWidth = 510, outputHeight = 510)
   # myCamera <- callModule(shinyviewr,"myCamera")
-  
+  hide(id = "loading-content", anim = TRUE, animType = "fade") 
   #logic for what happens after a user has drawn their values. Note this will fire on editing again too.
   observeEvent(myCamera(), {
     show(id = "loading-content")    
