@@ -19,7 +19,6 @@ np<- import('numpy')
 pil <-import('PIL')
 # Define server logic required to draw a histogram
 #setwd("/srv/shiny-server/AmISam")
-currentDir <- script.dir <- dirname(sys.frame(1)$ofile)
 output$img_notsam <- renderImage({ list(src = "www/notsam_marked.png", height = 200, width = 200)}, deleteFile = FALSE)
 function(input, output, session) {
   
