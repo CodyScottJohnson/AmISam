@@ -19,7 +19,6 @@ np<- import('numpy')
 pil <-import('PIL')
 # Define server logic required to draw a histogram
 #setwd("/srv/shiny-server/AmISam")
-output$img_notsam <- renderImage({ list(src = "/srv/shiny-server/AmISam/www/notsam_marked.png", height = 200, width = 200)}, deleteFile = FALSE)
 function(input, output, session) {
   
   myCamera <- callModule(shinyviewr,"myCamera", outputWidth = 510, outputHeight = 510)
