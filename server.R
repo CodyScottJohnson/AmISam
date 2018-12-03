@@ -32,7 +32,8 @@ function(input, output, session) {
     #save.image(rastered_photo,"unknown.png")
     #new_photo <- np$array(rastered_photo)
     #Test<-plot(rastered_photo, main = 'My Photo!')
-    outfile <- 'Images/notsam.png'
+    #outfile <- 'Images/notsam.png'
+    outfile <- '/srv/shiny-server/AmISam/Images/notsam.png'
     png(file=outfile,
         width     = 500,
         height    = 500,
