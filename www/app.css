@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
+
+.navbar-brand img {
+  height: 30px;
+  margin-left: 12px;
+  margin-top: 7px; }
+
+.container-fluid {
+  padding: 0 !important; }
+
+#myCamera-myCamera {
+  padding-bottom: 10px; }
+  #myCamera-myCamera video {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 5px; }
+  #myCamera-myCamera button {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    font-family: 'Montserrat', sans-serif;
+    color: #808B95;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width: 460px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 0px 0px 5px 5px;
+    background: #721A2D;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0); }
+
+.navbar-default {
+  height: 70px;
+  border-bottom: 1px solid #721A2D;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.navbar-nav li a {
+  font-family: 'Montserrat', sans-serif;
+  color: #808B95;
+  font-size: 12px;
+  height: 69px;
+  line-height: 50px; }
+  .navbar-nav li a.active {
+    background: rgba(114, 26, 45, 0.2); }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: #721a2d;
+  color: white; }
+
+#loading-content {
+  background: rgba(255, 255, 255, 0.95);
+  display: block;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  position: fixed; }
+
+.app-loading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+  .app-loading img {
+    height: 325px;
+    width: 325px; }
+
+.app-loading .spinner {
+  height: 400px;
+  width: 400px;
+  animation: rotate 2s linear infinite;
+  transform-origin: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.app-loading .spinner .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: #721A2D; }
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0; }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px; }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px; } }
+
+.img-face {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px; }
+
+.notsam_col img {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  height: 200px;
+  width: 200px; }
+
+.tbl_con {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  border-radius: 5px; }
+
+.face_features {
+  font-family: 'Montserrat', sans-serif;
+  color: #808B95;
+  font-size: 12px;
+  padding: 20px;
+  border-radius: 5px; }
+  .face_features td {
+    font-family: 'Montserrat', sans-serif;
+    color: #808B95;
+    font-size: 12px; }
+  .face_features .feature {
+    padding: 10px 10px 10px 0px;
+    font-weight: 700; }
+  .face_features th {
+    color: #48111d;
+    font-weight: 700;
+    border-bottom: 2px solid #721A2D;
+    font-size: 16px; }
+
+.about {
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 30px;
+  text-align: left;
+  max-width: 600px; }

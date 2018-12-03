@@ -1,0 +1,12 @@
+name: AmISam
+title: AmISam
+username:
+account: codyjohnson
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 600248
+bundleId: 1735413
+url: https://codyjohnson.shinyapps.io/AmISam/
+when: 1543809964.90583
+asMultiple: FALSE
+asStatic: FALSE
