@@ -32,7 +32,7 @@ function(input, output, session) {
     #save.image(rastered_photo,"unknown.png")
     #new_photo <- np$array(rastered_photo)
     #Test<-plot(rastered_photo, main = 'My Photo!')
-    outfile <- 'AmISam/Images/notsam.png'
+    outfile <- 'Images/notsam.png'
     png(file=outfile,
         width     = 500,
         height    = 500,
