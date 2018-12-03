@@ -18,6 +18,7 @@ face<- import('face_recognition')
 np<- import('numpy')
 pil <-import('PIL')
 # Define server logic required to draw a histogram
+setwd("/srv/shiny-server/AmISam")
 function(input, output, session) {
   
   myCamera <- callModule(shinyviewr,"myCamera", outputWidth = 510, outputHeight = 510)
