@@ -18,7 +18,9 @@ face<- import('face_recognition')
 np<- import('numpy')
 pil <-import('PIL')
 # Define server logic required to draw a histogram
-setwd("/srv/shiny-server/AmISam")
+#setwd("/srv/shiny-server/AmISam")
+currentDir <- script.dir <- dirname(sys.frame(1)$ofile)
+output$img_notsam <- renderImage({ list(src = "www/notsam_marked.png", height = 200, width = 200)}, deleteFile = FALSE)
 function(input, output, session) {
   
   myCamera <- callModule(shinyviewr,"myCamera", outputWidth = 510, outputHeight = 510)
@@ -32,7 +34,7 @@ function(input, output, session) {
     #save.image(rastered_photo,"unknown.png")
     #new_photo <- np$array(rastered_photo)
     #Test<-plot(rastered_photo, main = 'My Photo!')
-    outfile <- 'Images/notsam.png'
+    outfile <- 'AmISam/Images/notsam.png'
     png(file=outfile,
         width     = 500,
         height    = 500,
