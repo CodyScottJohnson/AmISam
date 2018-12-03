@@ -1,6 +1,6 @@
 import face_recognition
 
-known_image = face_recognition.load_image_file("Images/cody.jpg")
+known_image = face_recognition.load_image_file("Images/Sam.png")
 
 Known_encoding = face_recognition.face_encodings(known_image)[0]
 unknown_image = face_recognition.load_image_file('Images/notsam.png')
