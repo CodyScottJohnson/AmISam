@@ -8,7 +8,14 @@ While are initial implementation would be more of a simplified proof of concept,
 # Data
 In this case the data would be mainly photographs
 
-# Statistical Methods
-The method we are looking at uses a neural net implementation called FaceNet. FaceNet uses a Siamese Neural Network approach, meaning that it uses to neural networks with identical weights and runs each image through one of the networks and then compares the distance between the resulting output to determine if the images contain the same identity. The neural networks learn a mapping of images to compact Euclidean space and use that to calculate the distance between two images. Additionally, the model uses the loss function described below in training to minimize the distance between an anchor and a positive, images that contain the same identity, and maximize the distance between the anchor and a negative, images that contain different identities.
+# Approach
+## 1 - Identify Faces
+## 2 - Pose and Project Faces
+## 3 - Encode Face
+## 4 - Match Encoding to Identity
+The method we are looking at uses a neural net implementation called FaceNet. FaceNet uses a Siamese Neural Network approach, meaning that it uses to neural networks with identical weights and runs each image through one of the networks and then compares the distance between the resulting output to determine if the images contain the same identity. The neural networks learns a mapping of images to compact Euclidean space and use that to calculate the distance between two images. Additionally, the model uses the loss function described below in training to minimize the distance between an anchor and a positive, images that contain the same identity, and maximize the distance between the anchor and a negative, images that contain different identities.
+
+
+
 	
  

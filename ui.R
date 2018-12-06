@@ -4,6 +4,7 @@ library(shinyjs)
 
 shinyUI(fluidPage(
   useShinyjs(),
+  withMathJax(),
   
   # Loading message
   hidden(div(
