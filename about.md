@@ -45,6 +45,11 @@ We are using an implementation of a neural net commonly refered to as FaceNet.
 
 The neural networks learns a mapping of images to compact Euclidean space and use that to calculate the distance between two images. Additionally, the model uses the loss function described below in training to minimize the distance between an anchor and a positive, images that contain the same identity, and maximize the distance between the anchor and a negative, images that contain different identities.
 
+the approach strives for an embedding f(x), from an image x into a feature space R, such that the squared distance
+between all faces, independent of imaging conditions, of
+the same identity is small, whereas the squared distance between
+a pair of face images from different identities is large
+
 ##### Triplet Loss
 
 <p align="center">
