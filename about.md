@@ -2,6 +2,10 @@
 
 The app that uses the devices camera to capture the users face and then determines if the user is Sam Doku (this is a simplification to make the project more manageable). The goal here is really learning to experiment more with additional inputs in shiny as well as image recognition in R.
 
+## Source Code
+
+[https://github.com/CodyScottJohnson/AmISam](https://github.com/CodyScottJohnson/AmISam)
+
 ## Business Case
 Modern technology has made image recognition a viable option for a variety of applications. Countries like China have gone so far as to implement a face recognition based social credit score system accross the whole country.
 
