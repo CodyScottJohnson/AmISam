@@ -32,8 +32,8 @@ function(input, output, session) {
     #save.image(rastered_photo,"unknown.png")
     #new_photo <- np$array(rastered_photo)
     #Test<-plot(rastered_photo, main = 'My Photo!')
-    #outfile <- 'Images/notsam.png'
-    outfile <- '/srv/shiny-server/AmISam/Images/notsam.png'
+    outfile <- 'Images/notsam.png'
+    #outfile <- '/srv/shiny-server/AmISam/Images/notsam.png'
     png(file=outfile,
         width     = 500,
         height    = 500,
@@ -47,10 +47,10 @@ function(input, output, session) {
     output$description <-renderText(Iam['points'])
     output$img_notsam <- renderImage({ list(src = "www/notsam_marked.png", height = 200, width = 200)}, deleteFile = FALSE)
     if(length(amI['results'])>= 2 & amI['results'][2]=="TRUE"){
-      #output$results <-renderText("I'm Sorry Professor Mishra, but you are also not Sam")
+      output$results <-renderText("I'm Sorry Professor Mishra, but you are also not Sam")
     }
     else if(length(amI['results'])>= 1 & amI['results'][1]=="FALSE"){
-      output$results <-renderText("Your Not Sam")
+      output$results <-renderText("You're Not Sam")
     } 
     else if(length(amI['results'])>= 1 & amI['results'][1]=="TRUE"){
       output$results <-renderText("You Did It, You Are Sam, Congratulations!")

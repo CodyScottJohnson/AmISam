@@ -48,7 +48,11 @@ The neural networks learns a mapping of images to compact Euclidean space and us
 the approach strives for an embedding f(x), from an image x into a feature space R, such that the squared distance
 between all faces, independent of imaging conditions, of
 the same identity is small, whereas the squared distance between
-a pair of face images from different identities is large
+a pair of face images from different identities is large.
+
+<p align="center">
+    <img src="TripletGoal.png" style="width:100%;max-width:500px"/>
+</p>
 
 ##### Triplet Loss
 
