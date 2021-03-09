@@ -26,7 +26,7 @@ After the initial models is trained we then supply images of the identities or f
 Before we can compare faces we need to identify a face. To do this we use an approach called Histogram of Oriented Gradients (HOG). First we convert our image to greyscale and then we look at each individual pixel and draw arrows to indicate the direction in which the brightness is changing in surrounding pixels
 
 <p align="center">
-    <img src="HOG.png" style="max-width:100%;width:500px"/>
+    <img src="www/HOG.png" style="max-width:100%;width:500px"/>
 </p>
 
 #### 2 - Pose and Project Faces
@@ -51,13 +51,13 @@ the same identity is small, whereas the squared distance between
 a pair of face images from different identities is large.
 
 <p align="center">
-    <img src="TripletGoal.png" style="width:100%;max-width:500px"/>
+    <img src="www/TripletGoal.png" style="width:100%;max-width:500px"/>
 </p>
 
 ##### Triplet Loss
 
 <p align="center">
-    <img src="TripletLoss.png" style="max-width:100%"/>
+    <img src="www/TripletLoss.png" style="max-width:100%"/>
 </p>
 
 #### 4 - Match Encoding to Identity
